@@ -1,0 +1,42 @@
+.Navbar{
+    top:0px;
+    left:0px;
+    right:0px;
+    height: auto;
+    position: sticky;
+
+
+    display: grid;
+    grid-template-areas: "left center right" ;
+    grid-template-columns: 45% 10% 45%;
+    background: #232323;
+    box-shadow: 0 0 10px #232323;
+    color: white;
+    padding: 1px;
+}
+.Navbar > .left{
+    grid-area:left;
+    font-size: 40px;
+    float: left;
+}
+.Navbar > .right{
+    grid-area: right;
+    align-items: right;
+    margin: 7px;
+    display: inline;
+}
+.Navbar > .right > button{
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+}
+.Navbar > .center{
+    grid-area: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    display: none;
+    text-align: center;
+}
